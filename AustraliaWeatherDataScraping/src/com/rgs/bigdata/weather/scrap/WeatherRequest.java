@@ -140,13 +140,7 @@ public class WeatherRequest {
 			 //  System.out.println("Date and time in Sydney: " + df.format(date));
 			   localTime = df.format(date);
 		}
-		else if (city == "Australia/Cairns") {
-			IATACode = "CNS";
-			   df.setTimeZone(TimeZone.getTimeZone("Australia/Cairns"));
-			  // System.out.println("Date and time in Sydney: " + df.format(date));
-			   localTime = df.format(date);
-		}
-		
+	
 		else if (city == "Australia/Canberra") {
 			IATACode = "CBR";
 			   df.setTimeZone(TimeZone.getTimeZone("Australia/Canberra"));
@@ -182,8 +176,6 @@ public class WeatherRequest {
 		data= data +  "\n" +req.getDataForCity("Australia/Adelaide");
 		
 		data= data +  "\n" +req.getDataForCity("Australia/Perth");
-
-		data= data +  "\n" +req.getDataForCity("Australia/Cairns");
 
 		data= data +  "\n" +req.getDataForCity("Australia/Darwin");
 
